@@ -9,6 +9,9 @@ export default defineConfig({
     include: ['react-router-dom']
   },
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true,
     rollupOptions: {
       external: ['react-router-dom']
     }
