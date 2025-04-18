@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import LogoImg from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,10 +24,10 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 cursor-pointer ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-      <div className="flex items-center">
+        <div className="flex items-center">
           <Link to="hero" className="flex items-center">
             <img 
-              src= "/src/assets/logo.jpg" 
+              src={LogoImg} 
               alt="Company Logo"
               className="h-10" 
             />
