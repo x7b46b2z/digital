@@ -12,6 +12,7 @@ import AdvertisingCalculator from './components/AdvertisingCalculator';
 
 
 function App() {
+  const data = null; 
   return (
     <div className="font-sans">
       <Navbar />
